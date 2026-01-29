@@ -57,33 +57,64 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Status colors
+        status: {
+          draft: "hsl(var(--status-draft))",
+          "draft-foreground": "hsl(var(--status-draft-foreground))",
+          ready: "hsl(var(--status-ready))",
+          "ready-foreground": "hsl(var(--status-ready-foreground))",
+          exported: "hsl(var(--status-exported))",
+          "exported-foreground": "hsl(var(--status-exported-foreground))",
+        },
+        // Validation colors
+        validation: {
+          error: "hsl(var(--validation-error))",
+          warning: "hsl(var(--validation-warning))",
+          success: "hsl(var(--validation-success))",
+        },
+        // Table colors
+        table: {
+          header: "hsl(var(--table-header))",
+          "row-hover": "hsl(var(--table-row-hover))",
+          border: "hsl(var(--table-border))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      fontFamily: {
+        sans: ["Inter", "system-ui", "sans-serif"],
+        mono: ["JetBrains Mono", "Menlo", "monospace"],
+      },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+        "fade-in": {
+          from: { opacity: "0" },
+          to: { opacity: "1" },
+        },
+        "slide-in-right": {
+          from: { transform: "translateX(10px)", opacity: "0" },
+          to: { transform: "translateX(0)", opacity: "1" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-in": "fade-in 0.15s ease-out",
+        "slide-in-right": "slide-in-right 0.2s ease-out",
+      },
+      boxShadow: {
+        card: "0 1px 3px 0 rgb(0 0 0 / 0.05), 0 1px 2px -1px rgb(0 0 0 / 0.05)",
+        "card-hover": "0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.05)",
       },
     },
   },
