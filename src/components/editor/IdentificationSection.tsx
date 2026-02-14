@@ -21,9 +21,13 @@ const DECLARATION_TYPES = [
   { value: "IM5", label: "IM5 - Temporary Admission" },
   { value: "IM6", label: "IM6 - Re-importation" },
   { value: "IM7", label: "IM7 - Warehousing" },
+  { value: "IM8", label: "IM8 - Transit" },
+  { value: "IM9", label: "IM9 - Transshipment" },
   { value: "EX1", label: "EX1 - Definitive Export" },
   { value: "EX2", label: "EX2 - Temporary Export" },
   { value: "EX3", label: "EX3 - Re-exportation" },
+  { value: "EX4", label: "EX4 - Export from Free Zone" },
+  { value: "CO4", label: "CO4 - Coastal Trade" },
 ];
 
 // Common customs office codes for Trinidad & Tobago
@@ -33,6 +37,11 @@ const OFFICE_CODES = [
   { value: "TTSFRPBL", label: "TTSFRPBL - Piarco Airport" },
   { value: "TTSCBPBL", label: "TTSCBPBL - Scarborough (Tobago)" },
   { value: "TTPCLPBL", label: "TTPCLPBL - Point-a-Pierre" },
+  { value: "TTCHGPBL", label: "TTCHGPBL - Chaguaramas" },
+  { value: "TTTMPBL", label: "TTTMPBL - Tembladora" },
+  { value: "TTCRLPBL", label: "TTCRLPBL - Crown Point (Tobago)" },
+  { value: "TTGUAPBL", label: "TTGUAPBL - Guayaguayare" },
+  { value: "TTBRTPBL", label: "TTBRTPBL - Brighton" },
 ];
 
 export default function IdentificationSection({
